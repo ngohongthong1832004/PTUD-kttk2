@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cv-container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .cv-section {
+            margin-bottom: 20px;
+        }
+        .cv-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .cv-item {
+            margin-bottom: 10px;
+        }
+        .cv-item span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="cv-section">
+            <div class="cv-header">Personal Information</div>
+            <div class="cv-item"><span>Name:</span> {{cv.name}}</div>
+            <div class="cv-item"><span>Email:</span> {{cv.email}}</div>
+        </div>
+        
+        <div class="cv-section">
+            <div class="cv-header">Education</div>
+            <div class="cv-item">{{cv.education}}</div>
+        </div>
+        
+        <div class="cv-section">
+            <div class="cv-header">Work Experience</div>
+            <div class="cv-item">{{cv.work_experience}}</div>
+        </div>
+        
+        <div class="cv-section">
+            <div class="cv-header">Skills</div>
+            <div class="cv-item">{{cv.skill}}</div>
+        </div>
+    </div>
+</body>
+</html>

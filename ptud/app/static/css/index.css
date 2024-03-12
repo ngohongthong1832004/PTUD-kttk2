@@ -1,0 +1,36 @@
+/* index.css */
+
+/* Centering the content horizontally and vertically */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the container */
+.container {
+    text-align: center;
+}
+
+/* Styling for the header, nav, div, and footer */
+header, div, footer {
+    margin-bottom: 20px;
+}
+
+/* Styling for the header links */
+header ul {
+    list-style-type: none;
+
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #333;
+}
